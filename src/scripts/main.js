@@ -95,6 +95,10 @@ let deckSheetMusic = {
 
 function testing () {
     quizImage.innerHTML = "<img src=" + deckSheetMusic.card[0].imgSrc + ">";
+    answerOne.textContent = deckSheetMusic.card[0].correct;
+    answerTwo.textContent = deckSheetMusic.card[0]["incorrect-1"];
+    answerThree.textContent = deckSheetMusic.card[0]["incorrect-2"];
+    answerFour.textContent = deckSheetMusic.card[0]["incorrect-3"];
 }
 
 testing();
